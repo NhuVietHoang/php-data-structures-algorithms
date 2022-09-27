@@ -72,8 +72,9 @@ $player -> pushPlayer("mbape");
 var_dump($player);
 ```
 kết quả:
-object(PlayerList)#1 (2) { ["stack":protected]=> array(3) { [0]=> string(5) "mbape" [1]=> string(11) "leone messi" [2]=> string(17) "cristiano ronaldo" } ["limit":protected]=> int(10) } 
-
+```php
+object(PlayerList)1 (2) { ["stack":protected]=> array(3) { [0]=> string(5) "mbape" [1]=> string(11) "leone messi" [2]=> string(17) "cristiano ronaldo" } ["limit":protected]=> int(10) } 
+```
 * Lấy bản ghi
 code :
 ```php 
@@ -83,9 +84,10 @@ code :
 ```
 
 kết quả:
+```php
 mbape
-object(PlayerList)#1 (2) { ["stack":protected]=> array(2) { [0]=> string(11) "leone messi" [1]=> string(17) "cristiano ronaldo" } ["limit":protected]=> int(10) } 
-
+object(PlayerList)1 (2) { ["stack":protected]=> array(2) { [0]=> string(11) "leone messi" [1]=> string(17) "cristiano ronaldo" } ["limit":protected]=> int(10) } 
+```
 * xem thành phần đầu tiên của stack:
 code:
 ```php
@@ -164,8 +166,10 @@ while(!$queue->isEmpty())
 {  echo $queue->deQueue()."\n";}
 
 ``` 
-kết quả:start start 1 2 3 4 End 
-
+kết quả:
+```php
+   start start 1 2 3 4 End 
+```
 
 # Algorithms
 

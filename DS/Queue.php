@@ -19,7 +19,7 @@ class Queue{
     * chèn phần tử vào cuối Queue
     * @param $value
     */
-    public function pushQueue($value){
+    public function enQueue($value){
         $oldBack = $this->back;
         $this->back = new Element();
         $this->back->value = $value;
@@ -43,11 +43,11 @@ class Queue{
      }
 }
 $queue = new Queue();
-$queue->pushQueue("start");
-$queue->pushQueue(1);
-$queue->pushQueue(2);
-$queue->pushQueue(3);
-$queue->pushQueue(4);
-$queue->pushQueue("End");
+$queue->enQueue("start");
+$queue->enQueue(1);
+$queue->enQueue(2);
+$queue->enQueue(3);
+$queue->enQueue(4);
+$queue->enQueue("End");
 while(!$queue->isEmpty())
 {  echo $queue->deQueue()."\n";}

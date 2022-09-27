@@ -6,7 +6,7 @@ class PlayerList{
     {
         # khởi taọ stack
         $this->stack = array();
-        # stack chỉ bao gồm những cái này
+        # giới hạn phần tử trong stack
         $this->limit = $limit;
     }
     public function pushPlayer($player){
@@ -42,7 +42,9 @@ $player -> pushPlayer("cristiano ronaldo");
 $player -> pushPlayer("leone messi");
 $player -> pushPlayer("mbape");
 
-// lấy phần tử ra từ stack
+
+
+//lấy phần tử ra từ stack
 echo $player -> popPlayer().'<br>'; // lấy ra thằng mbape;
 
 $player ->pushPlayer("neymar jr");
